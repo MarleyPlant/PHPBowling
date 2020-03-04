@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/gameSpec.php" beforeDir="false" afterPath="$PROJECT_DIR$/spec/gameSpec.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.php" afterDir="false" />
     </list>
@@ -21,7 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
@@ -60,8 +61,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Factorial" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpSpecConfigurationType" factoryName="PHPSpec" nameIsGenerated="true">
+      <CommandLine workingDirectory="$PROJECT_DIR$" />
+      <PhpTestRunnerSettings directory="$PROJECT_DIR$" method="" options="phpspec r " />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -75,7 +83,7 @@
       <updated>1583235502035</updated>
       <workItem from="1583235504810" duration="10075000" />
       <workItem from="1583314745125" duration="7325000" />
-      <workItem from="1583326829337" duration="1972000" />
+      <workItem from="1583326829337" duration="3539000" />
     </task>
     <task id="LOCAL-00001" summary="Remove Frame class">
       <created>1583322668189</created>
@@ -91,26 +99,52 @@
       <option name="project" value="LOCAL" />
       <updated>1583328295177</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="One Strike Test Now Passing">
+      <created>1583328860511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583328860511</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Remove Frame class" />
     <MESSAGE value="One Strike Test Now Passing" />
     <option name="LAST_COMMIT_MESSAGE" value="One Strike Test Now Passing" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="356" y="27" width="701" height="741" key="#PHP" timestamp="1583329122191">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="356" y="27" width="701" height="741" key="#PHP/67.27.1299.741@67.27.1299.741" timestamp="1583329122191" />
+    <state x="376" y="42" width="671" height="708" key="#Unnamed" timestamp="1583329128450">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="376" y="42" width="671" height="708" key="#Unnamed/67.27.1299.741@67.27.1299.741" timestamp="1583329128450" />
+    <state x="95" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583329280311">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="95" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1583329280311" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583249886307">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1583249886307" />
-    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583328609222">
+    <state x="613" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583330377231">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583328609222" />
+    <state x="613" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583330377231" />
     <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1583328416579">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -119,14 +153,46 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog/67.27.1299.741@67.27.1299.741" timestamp="1583236857979" />
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583328292184">
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583328859763">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583328292184" />
-    <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583236184794">
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583328859763" />
+    <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583329064282">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1583236184794" />
+    <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1583329064282" />
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1583329287811">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583329287811" />
+    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1583329287808">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1583329287808" />
+    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1583329287807">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1583329287807" />
+    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1583329287810">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1583329287810" />
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1583329231075">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583329231075" />
+    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1583329231074">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1583329231074" />
+    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1583329231073">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1583329231073" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1583329231074">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1583329231074" />
     <state x="713" y="181" width="457" height="373" key="NewPhpClassDialog" timestamp="1583235598073">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

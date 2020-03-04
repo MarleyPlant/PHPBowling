@@ -4,17 +4,36 @@ class game
 {
     private array $rolls;
     private int $currentRoll;
+    private int $maxRolls;
 
     function __construct()
     {
-        $this->rolls = array(0, 20);
+        $this->rolls = array(0, 22);
         $this->currentRoll = 0;
+        $this->maxRolls = 20;
     }
 
     public function roll($pins)
     {
-        $this->rolls[$this->currentRoll] = $pins;
-        $this->currentRoll++;
+        $isSpare = $pins == 5;
+        $isStrike = $pins == 10;
+
+        if ($this->currentRoll < $this->maxRolls) {
+            $this->addRoll($pins);
+            $this->currentRoll++;
+        } else {
+            if ($isStrike) {
+                $this->addRoll($pins);
+                $this->maxRolls += 2;
+                $this->currentRoll++;
+            } else {
+                if ($isSpare) {
+                    $this->addRoll($pins);
+                    $this->maxRolls += 1;
+                    $this->currentRoll++;
+                }
+            }
+        }
     }
 
     public function score()
@@ -33,11 +52,8 @@ class game
                 $score += $this->nextBall($indexofFirstFrame);
                 $indexofFirstFrame += 2;
             }
-
-
         }
         return $score;
-
     }
 
     /**
@@ -77,6 +93,14 @@ class game
     private function nextBall(int $indexofFirstFrame)
     {
         return $this->rolls[$indexofFirstFrame] + $this->rolls[$indexofFirstFrame + 1];
+    }
+
+    /**
+     * @param $pins
+     */
+    private function addRoll($pins): void
+    {
+        $this->rolls[$this->currentRoll] = $pins;
     }
 
 }

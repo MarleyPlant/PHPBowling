@@ -1,15 +1,15 @@
 {
-    "name": "marley/factorial",
-    "require": {
-        "phpspec/phpspec": "^6.1"
-    },
-    "authors": [
-        {
-            "name": "MarleyPlant",
-            "email": "marley@marleyplant.com"
-        }
-    ],
-    "autoload": {
+  "name": "marleyplant/Bowling",
+  "require": {
+    "phpspec/phpspec": "^6.1"
+  },
+  "authors": [
+    {
+      "name": "MarleyPlant",
+      "email": "marley@marleyplant.com"
+    }
+  ],
+  "autoload": {
         "psr-0": {
             "": "src/"
         }

@@ -53,6 +53,21 @@ class gameSpec extends ObjectBehavior
         $this->score()->shouldReturn(24);
     }
 
+    function it_has_10th_frame_functionality()
+    {
+        $this->beConstructedWith();
+        $this->rollMany(19, 0);
+        $this->roll(10);
+        $this->roll(10);
+        $this->score()->shouldReturn(20);
+    }
+
+    function complicated_game()
+    {
+        $this->beConstructedWith();
+
+    }
+
     private function rollMany($rolls, $pins)
     {
         for ($i = 1; $i <= $rolls; $i++) {
