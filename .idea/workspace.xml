@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="Remove Frame class">
+    <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/gameSpec.php" beforeDir="false" afterPath="$PROJECT_DIR$/spec/gameSpec.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.php" afterDir="false" />
@@ -74,37 +74,55 @@
       <option name="presentableId" value="Default" />
       <updated>1583235502035</updated>
       <workItem from="1583235504810" duration="10075000" />
-      <workItem from="1583314745125" duration="6792000" />
+      <workItem from="1583314745125" duration="7325000" />
+      <workItem from="1583326829337" duration="1972000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove Frame class">
+      <created>1583322668189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583322668189</updated>
+    </task>
+    <task id="LOCAL-00002" summary="One Strike Test Now Passing">
+      <created>1583328295177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583328295177</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Remove Frame class" />
+    <MESSAGE value="One Strike Test Now Passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="One Strike Test Now Passing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583249886307">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1583249886307" />
-    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583322421292">
+    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583328609222">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583322421292" />
-    <state x="165" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1583320834159">
+    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583328609222" />
+    <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1583328416579">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="165" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/67.27.1299.741@67.27.1299.741" timestamp="1583320834159" />
+    <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/67.27.1299.741@67.27.1299.741" timestamp="1583328416579" />
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog" timestamp="1583236857979">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog/67.27.1299.741@67.27.1299.741" timestamp="1583236857979" />
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583322630784">
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583328292184">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583322630784" />
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583328292184" />
     <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583236184794">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -113,14 +131,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="713" y="181" width="457" height="373" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1583235598073" />
+    <state x="576" y="508" key="ReplaceDuplicatesPrompt" timestamp="1583328626920">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="576" y="508" key="ReplaceDuplicatesPrompt/67.27.1299.741@67.27.1299.741" timestamp="1583328626920" />
     <state x="205" y="31" key="SettingsEditor" timestamp="1583250060622">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1583250060622" />
-    <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583318530178">
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583326831731">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1583318530178" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1583326831731" />
+    <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583327359223">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1583327359223" />
     <state x="380" y="175" key="run.anything.popup" timestamp="1583237710890">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

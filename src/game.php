@@ -13,8 +13,8 @@ class game
 
     public function roll($pins)
     {
-            $this->rolls[$this->currentRoll] = $pins;
-            $this->currentRoll++;
+        $this->rolls[$this->currentRoll] = $pins;
+        $this->currentRoll++;
     }
 
     public function score()
@@ -22,18 +22,19 @@ class game
         $score = 0;
         $indexofFirstFrame = 0;
 
-        for ($frame=0; $frame<10; $frame++){
+        for ($frame = 0; $frame < 10; $frame++) {
+            if ($this->isStrike($indexofFirstFrame)) {
+                $score += 10 + $this->nextBallForStrike($indexofFirstFrame);
+                $indexofFirstFrame++;
+            } else if ($this->isSpare($indexofFirstFrame)) {
+                $score += 10 + $this->nextBallForSpare($indexofFirstFrame);
+                $indexofFirstFrame += 2;
+            } else {
+                $score += $this->nextBall($indexofFirstFrame);
+                $indexofFirstFrame += 2;
+            }
 
-            if($this->isStrike($indexofFirstFrame)){
-                $score += 10 + $this->rolls[$indexofFirstFrame+1] + $this->rolls[$indexofFirstFrame + 2];
-            }
-            else if ($this->isSpare($indexofFirstFrame)){
-                $score += 10 + $this->rolls[$indexofFirstFrame+2];
-            }
-            else {
-                $score += $this->rolls[$indexofFirstFrame] + $this->rolls[$indexofFirstFrame+1]   ;
-            }
-            $indexofFirstFrame += 2;
+
         }
         return $score;
 
@@ -55,6 +56,27 @@ class game
     private function isStrike(int $indexofFirstFrame): bool
     {
         return $this->rolls[$indexofFirstFrame] == 10;
+    }
+
+
+    /**
+     * @param int $indexofFirstFrame
+     * @return int|mixed
+     */
+    private function nextBallForStrike(int $indexofFirstFrame)
+    {
+        return $this->rolls[$indexofFirstFrame + 1] + $this->rolls[$indexofFirstFrame + 2];
+    }
+
+
+    private function nextBallForSpare(int $indexofFirstFrame)
+    {
+        return $this->rolls[$indexofFirstFrame + 2];
+    }
+
+    private function nextBall(int $indexofFirstFrame)
+    {
+        return $this->rolls[$indexofFirstFrame] + $this->rolls[$indexofFirstFrame + 1];
     }
 
 }
