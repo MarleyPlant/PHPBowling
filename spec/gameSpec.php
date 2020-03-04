@@ -20,6 +20,7 @@ class gameSpec extends ObjectBehavior
     function it_should_return_score(){
         $this->beConstructedWith();
         $this->roll(1);
+
         $this->score()->shouldReturn(1);
     }
 
