@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="">
+    <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="Remove Frame class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/gameSpec.php" beforeDir="false" afterPath="$PROJECT_DIR$/spec/gameSpec.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.php" afterDir="false" />
@@ -19,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -73,26 +74,37 @@
       <option name="presentableId" value="Default" />
       <updated>1583235502035</updated>
       <workItem from="1583235504810" duration="10075000" />
-      <workItem from="1583314745125" duration="3064000" />
+      <workItem from="1583314745125" duration="6792000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583249886307">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1583249886307" />
-    <state x="865" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583238865625">
+    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583322421292">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="865" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583238865625" />
+    <state x="405" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583322421292" />
+    <state x="165" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1583320834159">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="165" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/67.27.1299.741@67.27.1299.741" timestamp="1583320834159" />
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog" timestamp="1583236857979">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog/67.27.1299.741@67.27.1299.741" timestamp="1583236857979" />
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583322630784">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583322630784" />
     <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583236184794">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -105,6 +117,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1583250060622" />
+    <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583318530178">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1583318530178" />
     <state x="380" y="175" key="run.anything.popup" timestamp="1583237710890">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
