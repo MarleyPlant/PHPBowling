@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/gameSpec.php" beforeDir="false" afterPath="$PROJECT_DIR$/spec/gameSpec.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.php" afterDir="false" />
     </list>
@@ -17,6 +16,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +96,7 @@
       <updated>1583235502035</updated>
       <workItem from="1583235504810" duration="10075000" />
       <workItem from="1583314745125" duration="7325000" />
-      <workItem from="1583326829337" duration="3539000" />
+      <workItem from="1583326829337" duration="7537000" />
     </task>
     <task id="LOCAL-00001" summary="Remove Frame class">
       <created>1583322668189</created>
@@ -106,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583328860511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add 10th Frame Functionality">
+      <created>1583330436629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583330436629</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improve Tests">
+      <created>1583332429352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583332429352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +146,9 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Remove Frame class" />
     <MESSAGE value="One Strike Test Now Passing" />
-    <option name="LAST_COMMIT_MESSAGE" value="One Strike Test Now Passing" />
+    <MESSAGE value="Add 10th Frame Functionality" />
+    <MESSAGE value="Improve Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve Tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -137,6 +166,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="95" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1583329280311" />
+    <state x="505" y="84" width="412" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1583334047135">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="505" y="84" width="412" height="625" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1583334047135" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583249886307">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -153,10 +186,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog/67.27.1299.741@67.27.1299.741" timestamp="1583236857979" />
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583328859763">
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583335562456">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583328859763" />
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583335562456" />
     <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583329064282">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -217,9 +250,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1583237710890" />
-    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583239236500">
+    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583334313871">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1583239236500" />
+    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1583334313871" />
   </component>
 </project>

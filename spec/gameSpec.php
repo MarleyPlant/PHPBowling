@@ -2,6 +2,7 @@
 
 namespace spec;
 
+use Exception;
 use game;
 use PhpSpec\ObjectBehavior;
 
@@ -16,6 +17,13 @@ class gameSpec extends ObjectBehavior
     {
         $this->beConstructedWith();
         $this->roll(1);
+    }
+
+    function it_throws_exception_on_invalid_roll()
+    {
+        $this->beConstructedWith();
+        $this->roll(5);
+        $this->roll(7)->shouldReturn(Exception::class);
     }
 
     function it_scores_correct_after_gutter_Game()
@@ -62,16 +70,34 @@ class gameSpec extends ObjectBehavior
         $this->score()->shouldReturn(20);
     }
 
-    function complicated_game()
+    function it_passses_complicated_game()
     {
         $this->beConstructedWith();
+        $this->rollArray([3, 5, 10, 10, 5, 2, 1, 5, 6, 3, 0, 0, 0, 0, 0, 0, 10, 5, 2]);
+        $this->score()->shouldReturn(89);
+    }
 
+    function it_wont_allow_out_of_game_rolls()
+    {
+        $this->beConstructedWith();
+        $this->rollMany(19, 0);
+        $this->roll(3); //Game Ends
+
+        $this->roll(10);
+        $this->score()->shouldReturn(3);
     }
 
     private function rollMany($rolls, $pins)
     {
         for ($i = 1; $i <= $rolls; $i++) {
             $this->roll($pins);
+        }
+    }
+
+    private function rollArray(array $rolls)
+    {
+        foreach ($rolls as $roll) {
+            $this->roll($roll);
         }
     }
 

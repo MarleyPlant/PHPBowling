@@ -17,22 +17,24 @@ class game
     {
         $isSpare = $pins == 5;
         $isStrike = $pins == 10;
+        $isLastRolls = $this->currentRoll > 19;
+        $isInvalidRoll = false;  // ($this->rolls[$this->currentRoll] + $pins) > 10;
+
+        if ($isInvalidRoll) {
+            throw new Exception("Invalid Roll");
+        }
 
         if ($this->currentRoll < $this->maxRolls) {
             $this->addRoll($pins);
             $this->currentRoll++;
-        } else {
-            if ($isStrike) {
-                $this->addRoll($pins);
-                $this->maxRolls += 2;
-                $this->currentRoll++;
-            } else {
-                if ($isSpare) {
-                    $this->addRoll($pins);
-                    $this->maxRolls += 1;
-                    $this->currentRoll++;
-                }
-            }
+        } else if ($isStrike && $isLastRolls) {
+            $this->addRoll($pins);
+            $this->maxRolls += 2;
+            $this->currentRoll++;
+        } else if ($isSpare && $isLastRolls) {
+            $this->addRoll($pins);
+            $this->maxRolls += 1;
+            $this->currentRoll++;
         }
     }
 
