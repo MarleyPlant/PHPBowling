@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="">
+    <list default="true" id="79dd853b-ab9f-4a6a-b215-808edb21bd55" name="Default Changelist" comment="Improve Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/gameSpec.php" beforeDir="false" afterPath="$PROJECT_DIR$/spec/gameSpec.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.php" afterDir="false" />
@@ -96,7 +96,8 @@
       <updated>1583235502035</updated>
       <workItem from="1583235504810" duration="10075000" />
       <workItem from="1583314745125" duration="7325000" />
-      <workItem from="1583326829337" duration="7537000" />
+      <workItem from="1583326829337" duration="7684000" />
+      <workItem from="1583920652599" duration="3729000" />
     </task>
     <task id="LOCAL-00001" summary="Remove Frame class">
       <created>1583322668189</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583332429352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Improve Tests">
+      <created>1583335597445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583335597445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,66 +174,70 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="95" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1583329280311" />
-    <state x="505" y="84" width="412" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1583334047135">
+    <state x="505" y="84" width="412" height="625" key="#com.intellij.ide.util.MemberChooser" timestamp="1583923009737">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="505" y="84" width="412" height="625" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1583334047135" />
+    <state x="505" y="84" width="412" height="625" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1583923009737" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583249886307">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1583249886307" />
-    <state x="613" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583330377231">
+    <state x="837" y="96" width="501" height="605" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1583924241686">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="613" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583330377231" />
-    <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1583328416579">
+    <state x="837" y="96" width="501" height="605" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/67.27.1299.741@67.27.1299.741" timestamp="1583924241686" />
+    <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1" timestamp="1583923543182">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/67.27.1299.741@67.27.1299.741" timestamp="1583328416579" />
+    <state x="161" y="27" width="501" height="741" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method1/67.27.1299.741@67.27.1299.741" timestamp="1583923543182" />
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog" timestamp="1583236857979">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="521" y="213" width="381" height="366" key="#com.jetbrains.php.refactoring.makeStatic.PhpMakeStaticDialog/67.27.1299.741@67.27.1299.741" timestamp="1583236857979" />
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583335562456">
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2" timestamp="1583924439636">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583335562456" />
+    <state x="279" y="27" width="865" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1583924439636" />
     <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583329064282">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="724" y="126" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1583329064282" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1583329287811">
+    <state width="1253" height="219" key="GridCell.Tab.0.bottom" timestamp="1583335691261">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583329287811" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1583329287808">
+    <state width="1253" height="219" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583335691261" />
+    <state width="1253" height="219" key="GridCell.Tab.0.center" timestamp="1583335691259">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1583329287808" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1583329287807">
+    <state width="1253" height="219" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1583335691259" />
+    <state width="1253" height="219" key="GridCell.Tab.0.left" timestamp="1583335691258">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1583329287807" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1583329287810">
+    <state width="1253" height="219" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1583335691258" />
+    <state width="1253" height="219" key="GridCell.Tab.0.right" timestamp="1583335691260">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1583329287810" />
-    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1583329231075">
+    <state width="1253" height="219" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1583335691260" />
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1583335691264">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583329231075" />
-    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1583329231074">
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1583335691264" />
+    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1583335691262">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1583329231074" />
-    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1583329231073">
+    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1583335691262" />
+    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1583335691261">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1583329231073" />
-    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1583329231074">
+    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1583335691261" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1583335691263">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1583329231074" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1583335691263" />
+    <state x="421" y="112" width="580" height="568" key="MultipleFileMergeDialog" timestamp="1583335631573">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="421" y="112" width="580" height="568" key="MultipleFileMergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1583335631573" />
     <state x="713" y="181" width="457" height="373" key="NewPhpClassDialog" timestamp="1583235598073">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -238,10 +250,14 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1583250060622" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583326831731">
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1583335600806">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1583326831731" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1583335600806" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583920651412">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1583920651412" />
     <state x="484" y="316" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583327359223">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -250,9 +266,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1583237710890" />
-    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583334313871">
+    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583923720828">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1583334313871" />
+    <state x="374" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1583923720828" />
   </component>
 </project>

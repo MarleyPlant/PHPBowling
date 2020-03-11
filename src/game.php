@@ -8,7 +8,7 @@ class game
 
     function __construct()
     {
-        $this->rolls = array(0, 22);
+        $this->rolls = array_fill(0, 22, 0);
         $this->currentRoll = 0;
         $this->maxRolls = 20;
     }
@@ -18,23 +18,24 @@ class game
         $isSpare = $pins == 5;
         $isStrike = $pins == 10;
         $isLastRolls = $this->currentRoll > 19;
-        $isInvalidRoll = false;  // ($this->rolls[$this->currentRoll] + $pins) > 10;
 
-        if ($isInvalidRoll) {
+        if (!$this->isValidRoll($pins)) {
             throw new Exception("Invalid Roll");
         }
 
         if ($this->currentRoll < $this->maxRolls) {
             $this->addRoll($pins);
-            $this->currentRoll++;
-        } else if ($isStrike && $isLastRolls) {
+            return;
+        }
+        if ($isStrike && $isLastRolls) {
             $this->addRoll($pins);
             $this->maxRolls += 2;
-            $this->currentRoll++;
-        } else if ($isSpare && $isLastRolls) {
+            return;
+        }
+        if ($isSpare && $isLastRolls) {
             $this->addRoll($pins);
-            $this->maxRolls += 1;
-            $this->currentRoll++;
+            $this->maxRolls++;
+            return;
         }
     }
 
@@ -102,7 +103,37 @@ class game
      */
     private function addRoll($pins): void
     {
-        $this->rolls[$this->currentRoll] = $pins;
+        $this->rolls[$this->currentRoll++] = $pins;
+    }
+
+    /**
+     * @return bool
+     */
+    private function isSecondFrame(): bool
+    {
+        return 1 == ($this->currentRoll % 2);
+    }
+
+    /**
+     * @param $pins
+     * @return bool
+     */
+    private function isValidRoll($pins): bool
+    {
+        if (!$this->isSecondFrame()) {
+            return true;
+        }
+
+        if (!$this->currentRoll > 0) {
+            return true;
+        }
+
+        $lastRoll = $this->rolls[$this->currentRoll - 1];
+        if ($lastRoll == 10) {
+            return true;
+        }
+
+        return ($lastRoll + $pins) <= 10;
     }
 
 }

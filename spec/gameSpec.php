@@ -13,29 +13,25 @@ class gameSpec extends ObjectBehavior
         $this->shouldHaveType(game::class);
     }
 
-    function it_should_roll()
-    {
-        $this->beConstructedWith();
-        $this->roll(1);
-    }
-
     function it_throws_exception_on_invalid_roll()
     {
-        $this->beConstructedWith();
         $this->roll(5);
-        $this->roll(7)->shouldReturn(Exception::class);
+        $this->shouldThrow(Exception::class)->duringRoll(8);
+    }
+
+    function it_should_roll()
+    {
+        $this->roll(1);
     }
 
     function it_scores_correct_after_gutter_Game()
     {
-        $this->beConstructedWith();
         $this->rollMany(20, 0);
         $this->score()->shouldReturn(0);
     }
 
     function it_scores_correct_after_all_ones()
     {
-        $this->beConstructedWith();
         $this->rollMany(20, 1);
         $this->score()->shouldReturn(20);
     }
@@ -43,7 +39,6 @@ class gameSpec extends ObjectBehavior
 
     function it_scores_correct_after_one_spare()
     {
-        $this->beConstructedWith();
         $this->rollSpare();
         $this->roll(3);
         $this->rollMany(17, 0);
@@ -52,7 +47,6 @@ class gameSpec extends ObjectBehavior
 
     function it_scores_correct_after_one_strike()
     {
-        $this->beConstructedWith();
         $this->roll(10);
         $this->roll(3);
         $this->roll(4);
@@ -63,7 +57,6 @@ class gameSpec extends ObjectBehavior
 
     function it_has_10th_frame_functionality()
     {
-        $this->beConstructedWith();
         $this->rollMany(19, 0);
         $this->roll(10);
         $this->roll(10);
@@ -72,14 +65,12 @@ class gameSpec extends ObjectBehavior
 
     function it_passses_complicated_game()
     {
-        $this->beConstructedWith();
         $this->rollArray([3, 5, 10, 10, 5, 2, 1, 5, 6, 3, 0, 0, 0, 0, 0, 0, 10, 5, 2]);
         $this->score()->shouldReturn(89);
     }
 
     function it_wont_allow_out_of_game_rolls()
     {
-        $this->beConstructedWith();
         $this->rollMany(19, 0);
         $this->roll(3); //Game Ends
 
