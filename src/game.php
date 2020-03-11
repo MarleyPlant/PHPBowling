@@ -1,139 +1,165 @@
 <?php
 
+use Exceptions\InvalidRoll;
+
 class game
 {
-    private array $rolls;
-    private int $currentRoll;
-    private int $maxRolls;
+    const SPARE          = 5;
+    const STRIKE         = 10;
+    const SPARE_BONUS    = 10;
+    const MAX_FRAMES     = 10;
+    const PINS_PER_FRAME = 10;
 
-    function __construct()
+    private int   $currentRoll;
+
+    private int   $indexOfFirstFrame;
+
+    private int   $maxRolls;
+
+    private array $rolls;
+
+    public function __construct()
     {
-        $this->rolls = array_fill(0, 22, 0);
+        $this->rolls       = array_fill(0, 22, 0);
         $this->currentRoll = 0;
-        $this->maxRolls = 20;
+        $this->maxRolls    = 20;
     }
 
-    public function roll($pins)
+    /** @throws Exception */
+    public function roll(int $pins)
     {
-        $isSpare = $pins == 5;
-        $isStrike = $pins == 10;
-        $isLastRolls = $this->currentRoll > 19;
+        $isSpare     = $pins == self::SPARE;
+        $isStrike    = $pins == self::STRIKE;
+        $isLastRolls = $this->currentRoll >= 19;
 
-        if (!$this->isValidRoll($pins)) {
-            throw new Exception("Invalid Roll");
+        if ($this->isInvalidRoll($pins)) {
+            throw InvalidRoll::withPins($pins);
         }
 
         if ($this->currentRoll < $this->maxRolls) {
             $this->addRoll($pins);
+
             return;
         }
         if ($isStrike && $isLastRolls) {
             $this->addRoll($pins);
             $this->maxRolls += 2;
+
             return;
         }
         if ($isSpare && $isLastRolls) {
             $this->addRoll($pins);
             $this->maxRolls++;
+
             return;
         }
     }
 
-    public function score()
+    public function score(): int
     {
-        $score = 0;
-        $indexofFirstFrame = 0;
+        $score                   = 0;
+        $this->indexOfFirstFrame = 0;
 
-        for ($frame = 0; $frame < 10; $frame++) {
-            if ($this->isStrike($indexofFirstFrame)) {
-                $score += 10 + $this->nextBallForStrike($indexofFirstFrame);
-                $indexofFirstFrame++;
-            } else if ($this->isSpare($indexofFirstFrame)) {
-                $score += 10 + $this->nextBallForSpare($indexofFirstFrame);
-                $indexofFirstFrame += 2;
-            } else {
-                $score += $this->nextBall($indexofFirstFrame);
-                $indexofFirstFrame += 2;
-            }
+        for ($frame = 0; $frame < self::MAX_FRAMES; $frame++) {
+            $score += $this->scoreFrame();
         }
+
         return $score;
     }
 
-    /**
-     * @param int $indexofFirstFrame
-     * @return bool
-     */
-    private function isSpare(int $indexofFirstFrame): bool
-    {
-        return $this->rolls[$indexofFirstFrame] + $this->rolls[$indexofFirstFrame + 1] == 10;
-    }
-
-    /**
-     * @param int $indexofFirstFrame
-     * @return bool
-     */
-    private function isStrike(int $indexofFirstFrame): bool
-    {
-        return $this->rolls[$indexofFirstFrame] == 10;
-    }
-
-
-    /**
-     * @param int $indexofFirstFrame
-     * @return int|mixed
-     */
-    private function nextBallForStrike(int $indexofFirstFrame)
-    {
-        return $this->rolls[$indexofFirstFrame + 1] + $this->rolls[$indexofFirstFrame + 2];
-    }
-
-
-    private function nextBallForSpare(int $indexofFirstFrame)
-    {
-        return $this->rolls[$indexofFirstFrame + 2];
-    }
-
-    private function nextBall(int $indexofFirstFrame)
-    {
-        return $this->rolls[$indexofFirstFrame] + $this->rolls[$indexofFirstFrame + 1];
-    }
-
-    /**
-     * @param $pins
-     */
-    private function addRoll($pins): void
+    private function addRoll(int $pins): void
     {
         $this->rolls[$this->currentRoll++] = $pins;
     }
 
-    /**
-     * @return bool
-     */
     private function isSecondFrame(): bool
     {
         return 1 == ($this->currentRoll % 2);
     }
 
-    /**
-     * @param $pins
-     * @return bool
-     */
-    private function isValidRoll($pins): bool
+    private function isSpare(): bool
+    {
+        return $this->rolls[$this->indexOfFirstFrame] + $this->rolls[1 + $this->indexOfFirstFrame] ==
+            self::PINS_PER_FRAME;
+    }
+
+    private function isStrike(): bool
+    {
+        return $this->rolls[$this->indexOfFirstFrame] == self::STRIKE;
+    }
+
+    private function isInvalidRoll(int $pins): bool
     {
         if (!$this->isSecondFrame()) {
-            return true;
+            return false;
         }
 
-        if (!$this->currentRoll > 0) {
-            return true;
+        if (0 == $this->currentRoll) {
+            return false;
         }
 
         $lastRoll = $this->rolls[$this->currentRoll - 1];
-        if ($lastRoll == 10) {
-            return true;
+        if ($lastRoll == self::STRIKE) {
+            return false;
         }
 
-        return ($lastRoll + $pins) <= 10;
+        return ($lastRoll + $pins) > 10;
+    }
+
+    private function nextBall()
+    {
+        return $this->rolls[$this->indexOfFirstFrame++] + $this->rolls[$this->indexOfFirstFrame++];
+    }
+
+    private function nextBallForSpare(): int
+    {
+        $this->indexOfFirstFrame += 2;
+
+        return $this->rolls[$this->indexOfFirstFrame];
+    }
+
+    private function nextBallForStrike(): int
+    {
+        return $this->rolls[1 + $this->indexOfFirstFrame++] + $this->rolls[1 + $this->indexOfFirstFrame];
+    }
+
+    /**
+     * @return int|mixed
+     */
+    private function scoreFrame()
+    {
+        if ($this->isStrike()) {
+            return $this->scoreStrike();
+        }
+        if ($this->isSpare()) {
+            return $this->scoreSpare();
+        }
+
+        return $this->scoreNextBall();
+    }
+
+    /**
+     * @return mixed
+     */
+    private function scoreNextBall(): int
+    {
+        return $this->nextBall();
+    }
+
+    /**
+     * @return int
+     */
+    private function scoreSpare(): int
+    {
+        return self::SPARE_BONUS + $this->nextBallForSpare();
+    }
+
+    /**
+     * @return int
+     */
+    private function scoreStrike(): int
+    {
+        return self::STRIKE + $this->nextBallForStrike();
     }
 
 }

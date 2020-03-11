@@ -2,7 +2,8 @@
 
 namespace spec;
 
-use Exception;
+use Exceptions\GameOver;
+use Exceptions\InvalidRoll;
 use game;
 use PhpSpec\ObjectBehavior;
 
@@ -16,7 +17,7 @@ class gameSpec extends ObjectBehavior
     function it_throws_exception_on_invalid_roll()
     {
         $this->roll(5);
-        $this->shouldThrow(Exception::class)->duringRoll(8);
+        $this->shouldThrow(InvalidRoll::class)->duringRoll(8);
     }
 
     function it_should_roll()
@@ -24,13 +25,13 @@ class gameSpec extends ObjectBehavior
         $this->roll(1);
     }
 
-    function it_scores_correct_after_gutter_Game()
+    function it_scores_zero_after_gutter_Game()
     {
         $this->rollMany(20, 0);
         $this->score()->shouldReturn(0);
     }
 
-    function it_scores_correct_after_all_ones()
+    function it_scores_20_after_all_ones()
     {
         $this->rollMany(20, 1);
         $this->score()->shouldReturn(20);
@@ -63,7 +64,7 @@ class gameSpec extends ObjectBehavior
         $this->score()->shouldReturn(20);
     }
 
-    function it_passses_complicated_game()
+    function it_passes_complicated_game()
     {
         $this->rollArray([3, 5, 10, 10, 5, 2, 1, 5, 6, 3, 0, 0, 0, 0, 0, 0, 10, 5, 2]);
         $this->score()->shouldReturn(89);
@@ -74,7 +75,7 @@ class gameSpec extends ObjectBehavior
         $this->rollMany(19, 0);
         $this->roll(3); //Game Ends
 
-        $this->roll(10);
+        //$this->shouldThrow(GameOver::class)->duringRoll(10);
         $this->score()->shouldReturn(3);
     }
 
