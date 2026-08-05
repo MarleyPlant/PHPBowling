@@ -1,0 +1,138 @@
+{
+  "name": "PHPBowling",
+  "gitPath": "https://github.com/MarleyPlant/PHPBowling",
+  "description": "A PHP implementation of the ten-pin bowling scoring game, built with TDD using PHPSpec.",
+  "sections": [
+    "Shields",
+    "Development",
+    "Brands",
+    "RelatedProjects"
+  ],
+  "sectionconfig": {
+    "Shields": {
+      "order": 0,
+      "GitHub Last Commit": {
+        "name": "GitHub Last Commit",
+        "pathParams": {
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/last-commit/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling"
+      },
+      "GitHub Commit Activity": {
+        "name": "GitHub Commit Activity",
+        "pathParams": {
+          "interval": "m",
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/commit-activity/:interval/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling"
+      },
+      "GitHub Repo stars": {
+        "name": "GitHub Repo stars",
+        "pathParams": {
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/stars/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling/stargazers"
+      },
+      "GitHub forks": {
+        "name": "GitHub forks",
+        "pathParams": {
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/forks/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling/network"
+      },
+      "GitHub Issues": {
+        "name": "GitHub Issues",
+        "pathParams": {
+          "variant": "issues",
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/:variant/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling/issues"
+      },
+      "GitHub repo size": {
+        "name": "GitHub repo size",
+        "pathParams": {
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/repo-size/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling"
+      },
+      "GitHub top language": {
+        "name": "GitHub top language",
+        "pathParams": {
+          "user": "MarleyPlant",
+          "repo": "PHPBowling"
+        },
+        "queryParams": {
+          "style": "flat"
+        },
+        "url": "https://img.shields.io/github/languages/top/:user/:repo",
+        "redirect": "https://github.com/MarleyPlant/PHPBowling"
+      }
+    },
+    "Development": {
+      "data": {
+        "depscmd": "composer install",
+        "startcmd": "vendor/bin/phpspec run"
+      },
+      "order": 1
+    },
+    "Brands": {
+      "order": 2,
+      "data": [
+        "php",
+        "composer",
+        "git",
+        "github"
+      ]
+    },
+    "RelatedProjects": {
+      "order": 3,
+      "data": [
+        {
+          "name": "PHPSpec",
+          "homepage": "https://www.phpspec.net"
+        },
+        {
+          "name": "Composer",
+          "homepage": "https://getcomposer.org"
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "php",
+    "bowling",
+    "phpspec",
+    "tdd",
+    "test-driven-development"
+  ]
+}
